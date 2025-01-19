@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/Capa 2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="/css/navbar.css"/>
+    <link rel="stylesheet" href="/css/summary.css">
+    <link rel="stylesheet" href="/css/navbarMobile.css">
+    <link rel="stylesheet" href="/css/headerMobile.css">
+    <link rel="stylesheet" href="/css/summaryMobile.css">
+    <script src="../js/storage.js"></script>
+    <script src="../js/storageHandling.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/includeHTML.js"></script>
+    <script src="/js/board.js"></script>
+    <script src="/js/summary.js"></script>
+    <script src="/js/helpFunctions.js"></script>
+    <script src="../js/contact.js"></script>
+
+    <title>JOIN Summary</title>
+  </head>
+  <body onload="initSummary()">
+    <div w3-include-html="../assets/templates/header_template.html"></div>
+    <div w3-include-html="../assets/templates/navbar_template.html"></div>
+
+    <div class="main-container">
+      <div class="headline-container">
+        <h2>Join 360</h2>
+        <div class="border"></div>
+        <h3>Key Metrics at a Glance</h3>
+        <div class="border-mobile"></div>
+      </div>
+      <div class="overwiev">
+        <div class="tasks-todo-done">
+         <div onclick="simulateClickButton('board-btn-navbar')" class="todo">
+           <div class="todo-icon-container">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="todo-svg" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.16667 22.3332H5.03333L16.5333 10.8332L14.6667 8.9665L3.16667 20.4665V22.3332ZM22.2333 8.89984L16.5667 3.29984L18.4333 1.43317C18.9444 0.922059 19.5722 0.666504 20.3167 0.666504C21.0611 0.666504 21.6889 0.922059 22.2 1.43317L24.0667 3.29984C24.5778 3.81095 24.8444 4.42761 24.8667 5.14984C24.8889 5.87206 24.6444 6.48873 24.1333 6.99984L22.2333 8.89984ZM20.3 10.8665L6.16667 24.9998H0.5V19.3332L14.6333 5.19984L20.3 10.8665Z" fill="white"/>
+            </svg>
+           </div>
+           <div class="todo-amount">
+              <h4 id="todo-amount">1</h4>
+              <span>To-do</span>
+           </div>
+         </div>
+         <div onclick="simulateClickButton('board-btn-navbar')" class="done">
+            <div class="todo-icon-container">
+                <svg width="38" height="30" viewBox="0 0 38 30" fill="none" class="done-svg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.02832 15.0001L15.2571 26.0662L33.9717 3.93408" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+            <div class="done-amount">
+              <h4 id="done-amount">1</h4>
+              <span>Done</span>
+            </div>
+         </div>
+        </div>
+        <div onclick="simulateClickButton('board-btn-navbar')" class="prio-date">
+         <div class="task-prio">
+            <div class="icon-container">
+                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="prio-icon">
+                    <path d="M19.6527 15.2547C19.418 15.2551 19.1895 15.1803 19.0006 15.0412L10.7486 8.958L2.4965 15.0412C2.38065 15.1267 2.24907 15.1887 2.10927 15.2234C1.96947 15.2582 1.82419 15.2651 1.68172 15.2437C1.53925 15.2223 1.40239 15.1732 1.27894 15.099C1.1555 15.0247 1.04789 14.927 0.962258 14.8112C0.876629 14.6954 0.814657 14.5639 0.77988 14.4243C0.745104 14.2846 0.738203 14.1394 0.759574 13.997C0.802733 13.7095 0.958423 13.4509 1.19239 13.2781L10.0965 6.70761C10.2852 6.56802 10.5138 6.49268 10.7486 6.49268C10.9833 6.49268 11.2119 6.56802 11.4006 6.70761L20.3047 13.2781C20.4906 13.415 20.6285 13.6071 20.6987 13.827C20.7688 14.0469 20.7677 14.2833 20.6954 14.5025C20.6231 14.7216 20.4833 14.9124 20.296 15.0475C20.1088 15.1826 19.8836 15.2551 19.6527 15.2547Z" fill="white"/>
+                    <path d="M19.6527 9.50568C19.4181 9.50609 19.1895 9.43124 19.0006 9.29214L10.7486 3.20898L2.49654 9.29214C2.26257 9.46495 1.96948 9.5378 1.68175 9.49468C1.39403 9.45155 1.13523 9.29597 0.962293 9.06218C0.789357 8.82838 0.71645 8.53551 0.759609 8.24799C0.802768 7.96048 0.958458 7.70187 1.19243 7.52906L10.0965 0.958588C10.2852 0.818997 10.5138 0.743652 10.7486 0.743652C10.9834 0.743652 11.212 0.818997 11.4007 0.958588L20.3048 7.52906C20.4907 7.66598 20.6286 7.85809 20.6987 8.07797C20.7689 8.29785 20.7677 8.53426 20.6954 8.75344C20.6231 8.97262 20.4833 9.16338 20.2961 9.29847C20.1088 9.43356 19.8837 9.50608 19.6527 9.50568Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="task-prio-amount">
+                <h4 id="prio-amount">1</h4>
+                <p>Urgent</p>
+            </div>
+         </div>
+         <div class="prio-date-border"></div>
+         <div class="task-date">
+            <b id="deadline">October 16, 2022</b>
+            <p>Upcoming Deadline</p>
+         </div>
+        </div>
+       <div onclick="simulateClickButton('board-btn-navbar')" class="overwiev-tasks">
+        <div class="amount-tasks">
+            <h4 id="amount-tasks-in-board">5</h4>
+            <span>Tasks in Board</span>
+        </div>
+        <div onclick="simulateClickButton('board-btn-navbar')" class="tasks-progress">
+            <h4 id="amount-tasks-progress">2</h4>
+            <span>Tasks in Progress</span>
+        </div>
+        <div onclick="simulateClickButton('board-btn-navbar')" class="tasks-feedback">
+            <h4 id="amount-tasks-feedback">2</h4>
+            <span>Awaiting Feedback</span>
+        </div>
+       </div>
+      </div>
+      <div id="greeting-container" class="greeting-container">
+       <h4 id="greeting-user"></h4>
+       <h3 id="loged-user"></h3>
+      </div>
+    </div>
+  </body>
+</html>

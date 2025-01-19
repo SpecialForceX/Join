@@ -1,0 +1,166 @@
+.add-task-confirmation-background {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}
+
+.add-task-confirmation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+    height: 74px;
+    border-radius: 20px;
+    background-color: var(--customized_darkblue);
+}
+
+.add-task-confirmation-img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30.5px;
+}
+
+.add-task-confirmation-container p {
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 30.5px;
+}
+
+.add-task-input-container select {
+    width: 430px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 12px 16px 12px 16px;
+    font-size: 20px;
+}
+
+#taskFilterInput {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.popup {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    color: var(--customized_red);
+    padding: 5px;
+    display: none;
+    z-index: 10;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 700;
+}
+
+.popup-progressbar {
+    position: absolute;
+    top: -30px; /* Passen Sie die Position nach Bedarf an */
+    left: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    display: none;
+    z-index: 10;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.progress-container:hover .popup-progressbar {
+    display: block;
+}
+
+.input-field-assigntTo input {
+    font-size: 20px;
+}
+
+.margin-bottom-16 {
+    margin-bottom: 16px;
+}
+
+.z-index-100 {
+    z-index: 100;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color_2);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.subtasks-popup-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.subtasks-popup-section::-webkit-scrollbar-track {
+    background: var(--color_2);
+    border-radius: 12px;
+}
+
+.subtasks-popup-section::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.big-card-assigned-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.big-card-assigned-container::-webkit-scrollbar-track {
+    background: var(--color_2);
+    border-radius: 12px;
+}
+
+.big-card-assigned-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.moveable-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 22;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    transition: 100ms;
+}
+
+.show-moveable {
+    transform: translateX(0);
+}
+
+.remove-moveable {
+    transform: translateX(100vw);
+}
+
+.dragging {
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none;
+}

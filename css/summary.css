@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    font-family: 'inter';
+    background-color: rgb(246, 247, 248);
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.headline-container {
+    position: absolute;
+    top: 200px;
+    left: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 625px;
+    height: 74px;
+}
+
+.border {
+    height: 60px;
+    border: 3px solid rgba(41, 171, 226, 1);
+}
+
+.overwiev {
+    position: absolute;
+    top: 340px;
+    left: 330px;
+    width: 560px;
+    height: 560px;
+}
+
+.overwiev-tasks {
+    width: 560px;
+    height: 170px;
+    position: absolute;
+    top: 390px;
+}
+
+.amount-tasks,
+.tasks-progress,
+.tasks-feedback {
+    position: absolute;
+    top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    width: 168px;
+    height: calc(168px - 50px);
+    padding: 25px 0;
+    border-radius: 30px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.tasks-progress {
+    left: 196px;
+}
+
+.tasks-feedback {
+    left: 390px;
+}
+
+.amount-tasks:hover {
+    cursor: pointer;
+    background-color: #2A3647;
+    color: white;
+    transition: background-color 175ms ,transform 175ms;
+    transform: translate(5px, 0px);
+    scale: 1.05;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tasks-progress:hover {
+    cursor: pointer;
+    background-color: #2A3647;
+    color: white;
+    transition: background-color 175ms ,transform 175ms;
+    transform: translate(0px, 0px);
+    scale: 1.05;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tasks-feedback:hover {
+    cursor: pointer;
+    background-color: #2A3647;
+    color: white;
+    transition: background-color 175ms ,transform 175ms;
+    transform: translate(-5px, 0px);
+    scale: 1.05;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.overwiev-tasks h4 {
+    margin: -8px;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.overwiev-tasks span {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 95px;
+}
+
+.prio-date {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    top: 196px;
+    width: calc(560px - 96px);
+    height: calc(168px - 56px);
+    padding: 28px 48px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.prio-date:hover {
+    cursor: pointer;
+    background-color: #2A3647;
+    color: white;
+    transition: background-color 175ms ,transform 175ms;
+    transform: translate(14px, 10px);
+    scale: 1.05;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.prio-date:hover .task-date b {
+    color: white;
+}
+
+.task-prio {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 130px;
+    height: 96px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #FF3D00;
+    border-radius: 50%;
+}
+
+.prio-icon {
+    width: 34px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.task-prio-amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 96px;
+}
+
+.task-prio-amount h4 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.task-prio-amount p {
+    margin: 0;
+}
+
+.prio-date-border {
+    height: 102px;
+    border: 2px solid #D1D1D1;
+}
+
+.task-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    width: 178px;
+    height: 57px;
+}
+
+.task-date b {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A3647;
+}
+
+.task-date p {
+    margin: 0;
+}
+
+.tasks-todo-done {
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    height: 168px;
+}
+
+.todo,
+.done {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: calc(264px - 38px);
+    height: calc(168px - 76px);
+    padding: 38px 19px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.todo:hover {
+    cursor: pointer;
+    background-color: #2A3647;
+    color: white;
+    transition: background-color 175ms ,transform 175ms;
+    transform: translate(5px, 5px);
+    scale: 1.05;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.todo:hover .todo-icon-container {
+    background-color: white;
+    transition: background-color 175ms;
+}
+
+.done:hover {
+    cursor: pointer;
+    background-color: #2A3647;
+    color: white;
+    transition: background-color 175ms ,transform 175ms;
+    transform: translate(-5px, 5px);
+    scale: 1.05;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.done:hover .todo-icon-container {
+    background-color: white;
+    transition: background-color 175ms;
+}
+
+.todo-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 69px;
+    background-color: #2A3647;
+    border-radius: 50%;
+}
+
+.todo:hover .todo-icon-container .todo-svg path {
+    fill: #2A3647;
+}
+
+.done:hover .todo-icon-container .done-svg path {
+    stroke: #2A3647;
+}
+
+.todo-amount,
+.done-amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.todo-amount h4, 
+.done-amount h4 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.todo-amount span,
+.done-amount span {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 95px;
+}
+
+.greeting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: absolute;
+    top: 548px;
+    left: 968px;
+    width: 385px;
+    height: 136px;
+}
+
+.greeting-container h4 {
+    margin: 0;
+    font-size: 47px;
+    font-weight: 500;
+    color: #2A3647;
+}
+
+.greeting-container h3 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    color: #29abe2;
+}
+
+.border-mobile {
+    display: none;
+}

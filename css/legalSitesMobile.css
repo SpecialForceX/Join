@@ -1,0 +1,38 @@
+@media (max-width: 1460px) {
+    .main-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1400px) {
+        .main-container {
+            width: 80%;
+            margin-left: 200px;
+            overflow: hidden;
+        }
+    }
+
+@media (max-width: 1023px) {
+    .main-container {
+        margin-left: 0;
+        margin-top: 80px;
+        margin-bottom: 95px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .title {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 48px;
+    }
+
+    .content-container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 47px;
+    }
+}

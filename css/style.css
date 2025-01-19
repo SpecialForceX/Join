@@ -1,0 +1,70 @@
+:root {
+    --color_1: #2a3647;
+    --customized_darkblue: #2a3647;
+
+    --color_2: #f6f7f8;
+    --customized_white: #f6f7f8;
+
+    --color_3: #29abe2;
+    --customized_lightblue: #29abe2;
+
+    --color_4: #a8a8a8;
+    --customized_gray: #a8a8a8;
+
+    --color_5: #d1d1d1;
+    --customized_lightgray: #d1d1d1;
+
+    --color_6: #42526E;
+    --customized_grayblue: #42526E;
+
+    --color_7: #0038FF;
+
+    --color_8: #4589FF;
+
+    --color_9: #F4F4F4;
+
+    --color_10: #1FD7C1;
+
+    --color_11: #E7E7E7;
+
+    --color_12: #FF8190;
+    --customized_lightred: #FF8190;
+
+    --color_13: #FF001F;
+    --customized_red: #ff001f;
+
+    --customized_black: #091931;
+
+    --customized_paleblue:#EDF2FA;
+
+    --customized_light_red: #ff3d00;
+
+    --customized_orange: #ffa800;
+
+    --customized_green: #7ae229;
+
+    --customized_beige: #cdcdcd;
+
+    --customized_gray_blue: #2A3D59;
+}
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 232px;
+    margin-top: 96px;
+    width: 1208px;
+    height: 100%;
+}
+
+
+.rotat90 {
+    transform: rotate(-90deg);
+}

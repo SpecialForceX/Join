@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0 0 12px 0;
+        }
+
+        main {
+            margin: 8px;
+        }
+
+        #tasks {
+            margin-top: 100px;
+            min-height: 100px;
+            height: auto;
+            width: 100%;
+            border: 1px solid lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tasks-box {
+            width: 33%;
+            height: auto;
+            border: 1px solid black;
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .description {
+            color: red;
+        }
+
+        .category {
+           color: blue;
+        }
+
+        .date {
+            color: black;
+
+        }
+    </style>
+</head>
+<body onload="init()">
+    <main>
+    <h1>Task Management</h1>
+    <form  onsubmit="addTask(); return false;">
+    <input required id="description" placeholder="Aufgabe">
+    <select id="category" placeholder="Kategorie">
+        <option>Marketing</option>
+        <option>Development</option>
+        <option>Design</option>
+    </select>
+    <button>Hinzufügen</button>
+</form>
+
+    <div id="tasks"></div>
+</main>
+    <script src="task.js"></script>
+</body>
+</html>

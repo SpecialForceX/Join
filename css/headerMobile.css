@@ -1,0 +1,39 @@
+@media (max-width: 1023px) {
+    .header-container {
+        height: 80px;
+    }
+
+    .header-txt-container {
+        display: none;
+    }
+
+    .header-join-logo-mobile {
+        display: flex;
+        margin-left: 16px;
+    }
+
+    .header-help-icon-mobile {
+        display: none !important;
+    }
+
+    .header-icons {
+        margin-right: -22px;
+    }
+
+    .profile-sidebar {
+        right: 10px;
+        top: 80px;
+    }
+
+    .profile-initials {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        left: -40px;
+    }
+
+    .header-profile-icon {
+        width: 40px;
+        height: 40px;
+    }
+}

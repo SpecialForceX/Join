@@ -1,0 +1,259 @@
+@media (max-width:1460px) {
+    .main-container {
+        margin-left: 200px;
+        width: 1100px;
+    }
+}
+
+@media (max-width:1350px) {
+
+.main-container {
+    margin-left: 200px;
+    width: 800px;
+}
+
+.add-Task-container {
+    width: 800px;
+}
+
+.task-description {
+    width: 340px;
+}
+
+.task-deadline {
+    width: 340px;
+}
+
+.task-buttons {
+    left: 50%;
+}
+
+.drop-down-contacts {
+    width: calc(95% + 12px);
+    height: 180px;
+}
+
+.contacts-list {
+    width: 100%;
+}
+
+.contacts-list {
+    max-height: 180px;
+}
+
+#selected-contacts {
+    width: calc(100% - 16px);
+}
+}
+
+@media (max-width: 1023px) {  
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .add-Task-container::-webkit-scrollbar {
+        width: 6px;
+      }
+
+    .main-container {
+        margin-left: 0;
+        margin-top: 30px;
+        width: calc(100vw - 24px);
+        padding: 12px;
+    }
+    
+    .add-task-header {
+        text-align: center;
+        margin-left: 0;
+        padding: 0 12px;
+    }
+    
+    .seperate-description-deadline {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .seperator {
+        display: none;
+    }
+
+    .add-Task-container {
+        width: calc(100% + 6px);
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .alert-mobile {
+        display: flex;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        top: 565px;
+    }
+
+    .alert {
+        position: unset;
+        z-index: 10;
+        margin-left: 16px;
+    }
+
+    .task-buttons-mobile {
+        position: relative;
+        top: -193px;
+        display: flex;
+        justify-content: flex-end;
+        height: 100px;
+    }
+
+    .task-buttons {
+        width: 180px;
+        top: 0;
+        left: unset;
+        margin-right: 16px;
+    }
+
+    .clear-button {
+        display: none;
+    }
+
+    .task-description {
+        width: calc(100% - 12px);
+    }
+
+    .task-deadline {
+        width: calc(100% - 12px);
+    }
+
+    .prio-container {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .contacts-list {
+        max-height: 106px;
+    }
+
+    .drop-down-contacts {
+        height: 106px;
+    }
+
+    .subtask-popup-edit-container {
+        margin-top: 0px;
+        height: 26px;
+    }
+
+    .subtasks-popup-section {
+        height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .subtask-edit-input {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .button-prio {
+        width: 30%;
+        font-size: 14px;
+    }
+
+    .prio-buttons {
+       width: 10px; 
+       height: 10px;
+    }
+
+    .prio-container {
+
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .add-task-header {
+        font-size: 40px;
+    }
+
+    .task-description-span {
+        font-size: 18px;
+    }
+
+    .task-deadline-span {
+        font-size: 18px;
+    }
+
+    .task-description input {
+        font-size: 16px;
+    }
+
+    .task-description input::placeholder,
+     textarea::placeholder {
+        font-size: 16px;
+    }
+    
+    input[type="date"]::-webkit-datetime-edit {
+        font-size: 16px;
+    }
+    
+    select option {
+        font-size: 16px;
+    }
+
+    select option[hidden][disabled][selected] {
+        font-size: 16px;
+    }
+
+    .task-buttons {
+        width: 140px;
+        right: 0px;
+    }
+
+    .alert {
+        font-size: 14px;
+        left: 0px;
+       }
+
+       .assigned-contact-name {
+        font-size: 18px;
+    }
+
+    .assigned-contact-initials {
+        width: 32px;
+        height: 32px;
+    }
+
+    .uncheck-contact {
+        width: 16px;
+        height: 16px;
+    }
+
+    .check-contact {
+        width: 16px;
+        height: 16px;
+    }
+
+    .task-buttons button {
+        font-size: 16px;
+    }
+
+    .task-buttons img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .create-button {
+        padding: 8px;
+    }
+
+    .add-task-input-container input::placeholder {
+        font-size: 16px;
+    }
+
+    .add-task-input-container select {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JOIN</title>
+    <link rel="shortcut icon" href="../assets/img/Capa 2.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loginAndSignup.css">
+    <link rel="stylesheet" href="../css/loginAndSignupMobil.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/storageHandling.js"></script>
+    <script src="../js/passwordShower.js"></script>
+    <script src="../js/formValidation.js"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body onload="startPage()">
+    <div class="logo">
+        <img src="../assets/img/Capa 2.svg" alt="Join logo">
+    </div>
+
+    <div class="signUpLink">
+        Not a Join user?
+        <a href="./signup.html"><button class="button_full">Sign up</button></a>
+    </div>
+
+    <form class="logInForm" onsubmit="passwordValidation(event)">
+
+        <div class="haedline">
+            <h1>Log in</h1>
+            <img src="../assets/img/blue_line.svg" alt="">
+        </div>
+
+        <div class="login-input">
+            <div class="gap32">
+                <div class="display">
+                    <div class="inputFrame">
+                        <input name="email" class="input" type="email" placeholder="Email" required>
+                        <div class="iconFrame">
+                            <img src="../assets/img/mail.svg" alt="mail icon">
+                        </div>
+                    </div>
+                    <div class="errorInfo">
+                        This field is required
+                    </div>
+                </div>
+
+                <div class="display">
+                    <div class="inputFrame">
+                        <input name="password" class="input" type="password" placeholder="Password" required>
+                        <div class="iconFrame">
+                            <img class="visi" src="../assets/img/visibility_off.svg" alt="visibility off icon"
+                                onclick="showPassword(event)">
+                            <img class="lock" src="../assets/img/lock.svg" alt="lock icon">
+                        </div>
+                    </div>
+                    <div class="errorInfo">
+                        This field is required
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkbox login">
+                <input name="remember" type="checkbox" id="rememberMe">
+                <label for="rememberMe">
+
+                    <img class="checkOff" id="img_check_off" src="../assets/img/checkbox_unselected.svg" alt="">
+                    <img class="checkOn" id="img_check_on" src="../assets/img/checkbox_selected.svg" alt="">
+
+                    <div>Remember Me</div>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="buttonbox">
+            <button class="button_full big" onclick="startFormValidation(event)">
+                <div>Log in</div>
+            </button>
+            <button class="button_hollow big" onclick="loginAsGuest(event)">
+                <div>Guest Log in</div>
+            </button>
+        </div>
+
+    </form>
+
+    <div class="legalLinksBox">
+        <div><a class="legalLinks" href="../html/privacyPolicyLogin.html">Privacy Policy</a>
+        </div>
+        <div><a class="legalLinks" href="../html/legalNoticeLogin.html">Legal notice</a></div>
+    </div>
+</body>
+
+</html>

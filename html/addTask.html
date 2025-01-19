@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/img/Capa 2.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="../css/headerMobile.css">
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="../css/navbarMobile.css">
+  <link rel="stylesheet" href="/css/addTaskTemplate.css" />
+  <link rel="stylesheet" href="../css/addTaskTemplate(2).css">
+  <link rel="stylesheet" href="/css/addTask.css" />
+  <link rel="stylesheet" href="../css/addTaskMobile.css">
+  <script src="/js/storage.js"></script>
+  <script src="../js/storageHandling.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="/js/helpFunctions.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/includeHTML.js"></script>
+  <script src="/js/addTask.js"></script>
+  <script src="../js/addTaskAssignContact.js"></script>
+  <script src="../js/helpFunctionsAddTask.js"></script>
+  <script src="../js/addTaskHTML.js"></script>
+  <script src="/js/contact.js"></script>
+  <!-- <script src="../js/script.js"></script> -->
+  <title>JOIN Add Task</title>
+</head>
+
+<body onload="initPage()">
+  <div id="add-task-confirmation-background" class="add-task-confirmation-background">
+    <div class="add-task-confirmation-container">
+        <p>Task added to board</p>
+        <div class="add-task-confirmation-img">
+            <img src="/assets/img/add-task-confirmation.svg" alt="add-task-confirmation-img">
+        </div>
+    </div>
+  </div>
+  <div class="main-container">
+    <div>
+      <div class="add-Task-container">
+        <form id="add-task-form" onsubmit="addTask('addTask'); return false">
+          <h2 class="add-task-header">Add Task</h2>
+          <div class="seperate-description-deadline">
+            <div class="task-description">
+              <div class="flex">
+                <span class="task-description-span">Title</span>
+                <p class="important">*</p>
+              </div>
+
+              <div class="add-task-input-container mb" id="title-container">
+                <input required id="input-title" type="text" placeholder="Enter a title" />
+              </div>
+              <div class="error-text-container" id="title-error">
+                <span class="error-text">This field is required</span>
+              </div>
+              <span class="task-description-span">Description</span>
+              <div class="add-task-input-container">
+                <textarea id="input-description" placeholder="Enter a Description"></textarea>
+              </div>
+              <span class="task-description-span">Assigned to</span>
+              <div onclick="toggleContactsToAssign(event)" class="add-task-input-container mb" id="task-container">
+                <input onkeydown="searchContact()" placeholder="Select contacts to assign" class="contacts-assign" id="input-assignTo" autocomplete="off">
+                <img id="drop-down-arrow" src="/assets/img/arrow_drop_down.svg">
+              </div>
+              <div class="drop-down-contacts">
+                <div id="selected-contacts"></div>
+                <div class="contacts-list" id="contacts-list"></div>
+              </div>
+            </div>
+            <div class="alert-mobile">
+            <div class="alert">
+              <div class="flex">
+                <p class="important">*</p>
+                <span>This field is required</span>
+              </div>
+            </div>
+          </div>
+            <div class="seperator"></div>
+            <div class="task-deadline">
+              <div class="flex">
+                <span class="task-deadline-span">Due date</span>
+                <p class="important">*</p>
+              </div>
+              <div class="add-task-input-container mb" id="date-container">
+                <input required id="input-date" class="date-input" type="date" />
+              </div>
+              <div class="error-text-container" id="date-error">
+                <span class="error-text">This field is required</span>
+              </div>
+              <span class="task-deadline-span">Prio</span>
+              <div class="prio-container">
+                <button class="button-prio" id="button-urgent" type="button" onclick="getPrio('Urgent')">
+                  Urgent<img class="prio-buttons" id="img-urgent" src="/assets/img/urgent.svg" />
+                </button>
+                <button class="button-prio" id="button-medium" type="button" onclick="getPrio('Medium')">
+                  Medium<img class="prio-buttons" id="img-medium" src="/assets/img/medium.svg" />
+                </button>
+                <button class="button-prio" id="button-low" type="button" onclick="getPrio('Low')">
+                  Low<img class="prio-buttons" id="img-low" src="/assets/img/low.svg" />
+                </button>
+              </div>
+              <div class="flex">
+                <span class="task-deadline-span">Category</span>
+                <p class="important">*</p>
+              </div>
+              <div class="add-task-input-container mb">
+                <select required id="input-category">
+                  <option value="" disabled selected hidden>
+                    Select task category
+                  </option>
+                  <option>User Story</option>
+                  <option>Technical Task</option>
+                </select>
+              </div>
+              <div class="error-text-container" id="category-error">
+                <span class="error-text">This field is required</span>
+              </div>
+              <span class="task-deadline-span">Subtasks</span>
+              <div class="add-task-input-container margin-bottom-0">
+                <input oninput="checkInput('addTask', '')" class="subtask-input" type="text"
+                  placeholder="Add new subtask" id="subtasks-input" />
+                <img id="subtasks-popup-empty-img" src="/assets/img/add.svg" />
+                <div id="subtasks-popup-full-img" class="subtasks-popup-full-container">
+                  <div onclick="clearSubtaskInput('addTask', ''), checkInput('addTask', '')"
+                    class="subtask-popup-img-container">
+                    <img src="/assets/img/cancel.svg" alt="cross-img">
+                  </div>
+                  <div class="subtasks-popup-seperator"></div>
+                  <div
+                    onclick="addSubtaskToPopup('addTask', ''), clearSubtaskInput('addTask', ''), checkInput('addTask', '')"
+                    class="subtask-popup-img-container">
+                    <img src="/assets/img/check-subtask.svg" alt="check-img">
+                  </div>
+                </div>
+              </div>
+              <div class="subtasks-popup-section" id="subtasks-popup-section">
+
+              </div>
+            </div>
+          </div>
+          <div class="task-buttons-mobile">
+          <div class="task-buttons">
+            <div onclick="resetForm()" class="clear-button">
+              <span id="cancel-button">Clear</span>
+              <div class="cancel-svg-container">
+                <svg width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg" class="cancel-svg">
+                  <path
+                    d="M6.24953 7.00008L11.4925 12.2431M1.00653 12.2431L6.24953 7.00008L1.00653 12.2431ZM11.4925 1.75708L6.24853 7.00008L11.4925 1.75708ZM6.24853 7.00008L1.00653 1.75708L6.24853 7.00008Z"
+                    stroke="#2A3647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" strocke="" />
+                </svg>
+              </div>
+            </div>
+            <button onclick="testTask()" class="create-button">
+              Create Task<img src="/assets/img/check.svg" />
+            </button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    <div w3-include-html="../assets/templates/header_template.html"></div>
+    <div w3-include-html="../assets/templates/navbar_template.html"></div>
+  </div>
+</body>
+
+</html>

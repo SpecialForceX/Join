@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'inter';
+    src: url('/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+
+/* header-section */
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inter;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1);
+    z-index: 21;
+}
+
+.header-txt-container {
+    margin-left: 348px;
+}
+
+.header-txt-container p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    margin-right: -25px;
+}
+
+.header-help-icon {
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.header-help-icon:hover {
+    scale: 1.1;
+}
+
+.header-profile-icon {
+    cursor: pointer;
+}
+
+.profile-initials:hover {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 64px;
+}
+
+.header-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-sidebar {
+    display: none;
+    position: absolute;
+    top: 96px;
+    right: 10px;
+    background-color: var(--customized_darkblue);
+    border-radius: 20px 0 20px 20px;
+    padding: 10px;
+}
+
+.profile-sidebar a {
+    text-decoration: none;
+}
+
+.profile-sidebar-txt-container {
+    width: 118px;
+    height: 30px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-sidebar-txt-container:hover {
+    background-color: var(--customized_gray_blue);
+}
+
+.profile-sidebar-txt-container p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inter;
+    color: var(--customized_beige);
+}
+
+.profile-initials {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -56px;
+    top: 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: inter;
+    color: var(--customized_lightblue);
+    cursor: pointer;
+    z-index: 20;
+}
+
+.display-none {
+    display: none;
+}
+
+.header-join-logo-mobile {
+    display: none;
+}

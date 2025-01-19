@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/Capa 2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/board.css">
+    <link rel="stylesheet" href="/css/boardBigTaskView.css">
+    <link rel="stylesheet" href="/css/boardPopups.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/addTaskTemplate.css">
+    <link rel="stylesheet" href="../css/addTaskTemplate(2).css">
+    <link rel="stylesheet" href="/css/navbarMobile.css">
+    <link rel="stylesheet" href="/css/headerMobile.css">
+    <link rel="stylesheet" href="/css/boardMobile.css">
+    <script src="/js/includeHTML.js"></script>
+    <script src="/js/helpFunctions.js"></script>
+    <script src="/js/helpFunctionsBoard.js"></script>
+    <script src="/js/helpFunctionsAddTask.js"></script>
+    <script src="/js/addTaskAssignContact.js"></script>
+    <script src="/js/boardHTML.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/addTask.js"></script>
+    <script src="/js/storage.js"></script>
+    <script src="../js/storageHandling.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/addTaskHTML.js"></script>
+    <script src="/js/board.js"></script>
+
+    <title>JOIN Board</title>
+</head>
+
+<body onload="init()">
+    <div w3-include-html="/assets/templates/header_template.html"></div>
+    <div w3-include-html="/assets/templates/navbar_template.html"></div>
+
+    <div id="add-task-confirmation-background" class="add-task-confirmation-background z-index-100">
+        <div class="add-task-confirmation-container">
+            <p>Task added to board</p>
+            <div class="add-task-confirmation-img">
+                <img src="/assets/img/add-task-confirmation.svg" alt="add-task-confirmation-img">
+            </div>
+        </div>
+    </div>
+
+    <div id="big-card-background" class="moveable-container remove-moveable z-index-100">
+        <div id="big-card-container" class="big-card-container">
+
+        </div>
+    </div>
+
+    <div id="add-task-container" class="moveable-container remove-moveable z-index-100 display-mobile">
+        <div w3-include-html="/assets/templates/add_task_template.html"></div>
+    </div>
+
+    <div class="main-container scrollbar">
+        <div class="board-header-container">
+            <div class="board-header">
+                <div class="title">
+                    <h1>Board</h1>
+                    <div onclick="changeButtonColor()" id="board-addTask-button-mobile"
+                        class="board-addTask-button-mobile"></div>
+                </div>
+                <div class="board-header-right">
+
+                    <div class="input-container">
+                        <div class="input-box">
+                            <div id="noTasksPopup" class="popup">Keine Tasks gefunden!</div>
+                            <input id="search-input" onkeyup="taskSearch()" type="text" placeholder="Find Task">
+                            <div class="search-container">
+                                <div class="search-seperator"></div>
+                                <div class="search-icon-container">
+                                    <img src="/assets/img/search.svg" alt="search-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        onclick="showMovableContainer('show', 'addTask'), getCurrentStatus('todo'), selectDefaultPrio('button-medium')"
+                        id="add-task-btn" class="button_full atask disable-mobile">
+                        <div>
+                            Add Task
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="section-title-container disable-mobile">
+                <div class="todo-title-container marginLeft64">
+                    <p>To do</p>
+                    <div onclick="showMovableContainer('show', 'addTask'), getCurrentStatus('todo'), selectDefaultPrio('button-medium')"
+                        class="todo-section-add-icon">
+                    </div>
+                </div>
+                <div class="todo-title-container">
+                    <p>In progress</p>
+                    <div onclick="showMovableContainer('show', 'addTask'), getCurrentStatus('progress'), selectDefaultPrio('button-medium')"
+                        class="todo-section-add-icon">
+                    </div>
+                </div>
+                <div class="todo-title-container">
+                    <p>Await feedback</p>
+                    <div onclick="showMovableContainer('show', 'addTask'), getCurrentStatus('await'), selectDefaultPrio('button-medium')"
+                        class="todo-section-add-icon">
+                    </div>
+                </div>
+                <div class="todo-title-container marginRight64">
+                    <p>Done</p>
+                </div>
+            </div>
+        </div>
+        <div class="column-container">
+            <!-- ToDo Column -->
+            <div class="todo-title-container show-in-mobile">
+                <p>To do</p>
+                <div onclick="simulateClickButton('add-task-btn-navbar')" class="todo-section-add-icon"></div>
+            </div>
+            <div id="todo-column" class="todo-column" ondrop="moveTo('todo'); removeHighlight('todo-column')"
+                ondragleave="removeHighlight('todo-column')" ondragover="allowDrop(event); highlight('todo-column')">
+            </div>
+
+            <!-- In Progress Column -->
+            <div class="todo-title-container show-in-mobile">
+                <p>In progress</p>
+                <div onclick="simulateClickButton('add-task-btn-navbar')" class="todo-section-add-icon"></div>
+            </div>
+            <div id="progress-column" class="progress-column"
+                ondrop="moveTo('progress'); removeHighlight('progress-column')"
+                ondragleave="removeHighlight('progress-column')"
+                ondragover="allowDrop(event); highlight('progress-column')">
+            </div>
+
+            <!-- Await Feedback Column -->
+            <div class="todo-title-container show-in-mobile">
+                <p>Await feedback</p>
+                <div onclick="simulateClickButton('add-task-btn-navbar')" class="todo-section-add-icon"></div>
+            </div>
+            <div id="await-column" class="await-column" ondrop="moveTo('await'); removeHighlight('await-column')"
+                ondragleave="removeHighlight('await-column')" ondragover="allowDrop(event); highlight('await-column')">
+            </div>
+
+            <!-- Done Column -->
+            <div class="todo-title-container show-in-mobile">
+                <p>Done</p>
+            </div>
+            <div id="done-column" class="done-column" ondrop="moveTo('done'); removeHighlight('done-column')"
+                ondragleave="removeHighlight('done-column')" ondragover="allowDrop(event); highlight('done-column')">
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

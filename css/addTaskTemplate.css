@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "inter";
+  src: url("../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "inter";
+  background-color: rgb(245, 245, 245);
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+textarea:hover {
+  cursor: pointer;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.important {
+  margin: 0;
+  color: red;
+}
+
+.flex {
+  display: flex;
+}
+
+.task-template {
+  width: 1116px;
+  height: 870px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.add-task-header {
+  margin: 64px 0 0 74px;
+  font-weight: 700;
+  font-size: 61px;
+}
+
+.task-description {
+  width: 440px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 32px;
+}
+
+.task-description-span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.task-description input {
+  width: 90%;
+  height: 36px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 12px 16px 12px 16px;
+  font-size: 20px;
+}
+
+.task-description textarea {
+  width: 90%;
+  height: 120px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 18px 16px 18px 16px;
+  font-size: 20px;
+}
+
+.task-description select {
+  width: 430px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 12px 16px 12px 16px;
+  font-size: 20px;
+}
+
+.task-description input::placeholder,
+textarea::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #d1d1d1;
+}
+
+.alert {
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  top: 779px;
+  left: 74px;
+}
+
+.seperator {
+  height: 450px;
+  border: 1px solid #d1d1d1;
+  margin-top: 40px;
+}
+
+.seperate-description-deadline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.task-deadline {
+  width: 440px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 32px;
+}
+
+.task-deadline input::placeholder,
+textarea::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #d1d1d1;
+}
+
+.task-deadline-span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.prio-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.button-prio {
+  font-size: 20px;
+  font-weight: 400;
+  width: 136px;
+  height: 56px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 16px 10px 16px 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button-prio:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-urgent-active {
+  background-color: var(--customized_light_red);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.button-medium-active {
+  background-color: var(--customized_orange);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.button-low-active {
+  background-color: var(--customized_green);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.task-deadline select {
+  width: 430px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 12px 16px 12px 16px;
+  font-size: 20px;
+}
+.close-task {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 64px;
+  left: 1044px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.close-task:hover {
+  cursor: pointer;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 25px;
+  width: 334px;
+  height: 56px;
+  position: absolute;
+  top: 750px;
+  left: 716.25px;
+}
+
+.task-buttons button {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cancel-button {
+  width: 126px;
+  height: 56px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cancel-button-image {
+  width: 16px;
+  height: 16px;
+}
+
+.cancel-button:hover {
+  cursor: pointer;
+  border-color: rgb(41, 171, 226);
+  color: rgb(41, 171, 226);
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.create-button {
+  width: 183px;
+  height: 56px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 16px;
+  color: white;
+  background-color: rgba(42, 54, 71, 1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.create-button-image {
+  width: 16px;
+  height: 16px;
+}
+
+.create-button:hover {
+  background-color: rgb(41, 171, 226);
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.cancel-svg-container {
+  background: none;
+}
+
+.cancel-button:hover .cancel-svg path {
+  stroke: #29abe2;
+}
+
+.subtask-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  background-color: #ffffff;
+}
+
+.subtask-container img {
+  padding: 2px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+.subtask-container img:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+.subtask-input {
+  width: 100%;
+  border: none;
+  height: 32px;
+  font-size: 20px;
+}
+
+.subtask-input:focus {
+  outline: none;
+}
+
+.date-input {
+  width: 90%;
+  height: 36px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.add-task-input-container {
+  display: flex;
+  position: relative;
+  border: 1px solid;
+  border-color: #d1d1d1;
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  background-color: #ffffff;
+  width: 95%;
+  z-index: 1;
+}
+
+.mb {
+  margin-bottom: 0;
+}
+
+.focused {
+  border-color: var(--customized_lightblue);
+}
+
+.error {
+  border-color: var(--customized_red);
+}
+
+.add-task-input-container input,
+.add-task-input-container textarea {
+  width: 95%;
+  border: none;
+  outline: none;
+  padding: 6px;
+  box-sizing: border-box;
+  resize: none;
+  font-family: inter;
+}
+
+.add-task-input-container select,
+.add-task-input-container .date-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 6px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.error-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  height: 20px;
+  margin-bottom: 16px;
+}
+
+.error-text {
+  display: none;
+  font-size: 14px;
+  color: var(--customized_lightred);
+}
+
+.display-none {
+  display: none;
+}

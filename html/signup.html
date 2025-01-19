@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JOIN</title>
+    <link rel="shortcut icon" href="../assets/img/Capa 2.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loginAndSignup.css">
+    <link rel="stylesheet" href="../css/loginAndSignupMobil.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/storageHandling.js"></script>
+    <script src="../js/passwordShower.js"></script>
+    <script src="../js/formValidation.js"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body onload="startPage()">
+    <div class="logo">
+        <img src="../assets/img/Capa 2.svg" alt="Join logo">
+    </div>
+
+    <form id="signUpForm" class="signUpForm" onsubmit="signUpUser(event)">
+
+        <div class="haedline">
+            <h1>Sign up</h1>
+            <img src="../assets/img/blue_line.svg" alt="">
+        </div>
+
+        <div>
+
+            <div class="gap24">
+                <div>
+                    <div class="inputFrame">
+                        <input name="name" class="input" type="text" placeholder="Name" required>
+                        <div class="iconFrame">
+                            <img src="../assets/img/person (1).svg" alt="person icon">
+                        </div>
+                    </div>
+                    <div class="errorInfo">
+                        This field is required
+                    </div>
+                </div>
+
+                <div>
+                    <div class="inputFrame">
+                        <input name="email" class="input" type="email" placeholder="Email" required>
+                        <div class="iconFrame">
+                            <img src="../assets/img/mail.svg" alt="mail icon">
+                        </div>
+                    </div>
+                    <div class="errorInfo">
+                        This field is required
+                    </div>
+                </div>
+
+                <div>
+                    <div class="inputFrame">
+                        <input name="password" class="input" type="password" placeholder="Password" required>
+                        <div class="iconFrame">
+                            <img class="visi" src="../assets/img/visibility_off.svg" alt="visibility off icon"
+                                onclick="showPassword(event)">
+                            <img class="lock" src="../assets/img/lock.svg" alt="lock icon">
+                        </div>
+                    </div>
+                    <div class="errorInfo">
+                        This field is required
+                    </div>
+                </div>
+
+                <div>
+                    <div class="inputFrame">
+                        <input name="confirmPassword" class="input" type="password" placeholder="Confirm Password"
+                            required>
+                        <div class="iconFrame">
+                            <img class="visi" src="../assets/img/visibility_off.svg" alt="visibility off icon"
+                                onclick="showPassword(event)">
+                            <img class="lock" src="../assets/img/lock.svg" alt="lock icon">
+                        </div>
+                    </div>
+                    <div class="errorInfo">
+                        Ups! your password don`t match
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="checkbox signUp">
+                <input type="checkbox" id="checkboxSignUp" onclick="enabledButton(event)">
+                <label for="checkboxSignUp" id="checkboxSignUp_label">
+
+                    <img class="checkOff" id="img_check_off" src="../assets/img/checkbox_unselected.svg" alt="">
+                    <img class="checkOn" id="img_check_on" src="../assets/img/checkbox_selected.svg" alt="">
+
+                    <div>I accept the</div>
+                    <a href="../html/privacyPolicyLogin.html" rel="noopener noreferrer">Privacy policy</a>
+                </label>
+            </div>
+
+        </div>
+
+        <div>
+            <button class="button_full big" disabled="true" onclick="startFormValidation(event)">
+                <div>Sign up</div>
+            </button>
+        </div>
+
+        <a href="./login.html" class="backArrow"><img src="../assets/img/arrow_blue.svg" alt=""></a>
+
+    </form>
+
+    <div class="legalLinksBox">
+        <div><a class="legalLinks" href="../html/privacyPolicyLogin.html">Privacy Policy</a>
+        </div>
+        <div><a class="legalLinks" href="../html/legalNoticeLogin.html">Legal notice</a></div>
+    </div>
+
+    <div class="successBackground" id="successBackground"></div>
+    <div class="successBanner" id="successBanner">
+        You Signed Up successfully
+    </div>
+
+</body>
+
+</html>

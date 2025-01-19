@@ -1,0 +1,234 @@
+@media (max-width:1055px) {
+    .logo {
+        top: 37px;
+        left: 38px;
+    }
+
+    .logo img {
+        width: 64px;
+        height: 78px;
+    }
+}
+
+@media (max-width:700px) {
+
+    body {
+        font-family: 'inter';
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--customized_white);
+    }
+
+    form {
+        position: relative;
+        background-color: white;
+        border-radius: 30px;
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .logInForm {
+        width: 92.5vw;
+        max-width: 396px;
+        padding: 32px 16px 32px 16px;
+        box-sizing: border-box;
+        height: 62vh;
+    }
+
+    .login-input {
+        position: absolute;
+        top: 25%;
+    }
+
+    .signUpLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        position: fixed;
+        top: unset;
+        right: unset;
+        left: calc(50% - 140px);
+        bottom: 10%;
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+    }
+
+    .gap32 {
+        gap: 0;
+    }
+
+    .legalLinksBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 246px;
+        height: 35px;
+        left: calc(50vw - 123px);
+        bottom: 22px;
+    }
+
+    .haedline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        position: absolute;
+        top: 2%;
+    }
+
+    .haedline h1 {
+        width: 173px;
+        height: 56px;
+        font-size: 47px;
+        margin: 0;
+        font-weight: 700;
+        color: black;
+        align-items: center;
+        text-align: center;
+    }
+
+    .haedline img {
+        width: 88px;
+        height: 3px;
+    }
+
+    .display {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 16px 0px 16px;
+    }
+
+    .inputFrame {
+        width: 85vw;
+        max-width: 364px;
+        border: 1px solid var(--customized_lightgray);
+        border-radius: 10px;
+        padding: 0px 21px 0px 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .inputFrame:has(.input:focus) {
+        border-color: var(--customized_lightblue);
+    }
+
+    .signUpForm {
+        width: 92.5vw;
+        max-width: 396px;
+        padding: 32px 16px 32px 16px;
+        box-sizing: border-box;
+        height: 56%;
+        justify-content: flex-end;
+    }
+
+    .input {
+        padding: 12px 0px 12px 0px;
+        border: none;
+        flex: 1;
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        background-color: white !important;
+        width: 180px;
+    }
+
+    .login {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 92.5vw;
+        max-width: 396px;
+    }
+
+    .buttonbox {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .backArrow {
+        left: 10%;
+        top: 28px;
+     
+    }
+
+    .logo {
+        top: 24px;
+        left: 30px;
+    }
+}
+
+@media (max-height: 900px) {
+    .signUpForm {
+        height: 61%;
+    }
+
+    .haedline h1 {
+        font-size: 40px;
+    }
+
+    .haedline {
+        gap: 0;
+    }
+
+    .backArrow {
+        top: 22px;
+    }
+}
+
+@media (max-height: 850px) {
+    .gap24 {
+        gap: 0;
+    }
+}
+
+@media (max-height: 790px) {
+    .signUpForm {
+        height: 67%;
+    }
+}
+
+@media (max-height: 720px) {
+    .signUpForm {
+        height: 74%;
+        margin-bottom: -55px;
+    }
+}
+
+@media (max-height: 650px) {
+    .login label {
+        margin-top: 0;
+    }
+
+    .logo img {
+        width: 44px;
+        height: 58px;
+    }
+
+    .signUpForm {
+        height: 80%;
+        margin-bottom: -46px;
+    }
+
+    .legalLinksBox {
+        bottom: 4px;
+    }
+}
+

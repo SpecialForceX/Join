@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "inter";
+    src: url("/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+  }
+  
+  body {
+    margin: 0;
+    font-family: "inter";
+    background-color: var(--color_2);
+    overflow-x: hidden;
+  }
+
+.floating-contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 461px;
+    height: 364px;
+}
+
+.contact-name {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    width: 461px;
+    height: 120px;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: #ff7a00;
+}
+
+.contact-icon h3 {
+    margin: 0;
+    font-size: 47px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.edit-delet-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 287px;
+    height: 88px;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 56px;
+    white-space: wrap;
+}
+
+.name h3 {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.edit-delete-buttons {
+    display: flex;
+    gap: 13px;
+    width: 159px;
+    height: 24px;
+}
+
+.edit-delete-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    color: var(--customized_darkblue);
+}  
+
+.edit-delete-buttons button:hover {
+    cursor: pointer;
+    color: var(--customized_lightblue);
+}
+
+.edit-delete-buttons button:hover .svg-container .svg-hover path {
+    fill: var(--customized_lightblue); 
+  }
+
+.edit-delete-buttons button:hover .svg-container:hover .svg-hover path {
+    fill: var(--customized_lightblue); 
+  }
+
+  .contact-information-title {
+    display: flex;
+    align-items: center;
+    width: 207px;
+    height: 74px;
+  }
+
+  .contact-information-title span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 140px;
+    height: 128px;
+  }
+
+  .contact-email {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 140px;
+    height: 53px;
+  }
+
+  .contact-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 140px;
+    height: 53px;
+  }
+
+  .contact-information span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .contact-email a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--customized_lightblue);
+    text-decoration: none;
+  }
+
+  .contact-phone a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .leave-detail-contact {
+    display: none;
+  }

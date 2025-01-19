@@ -1,0 +1,228 @@
+@media (max-width: 1402px) {
+  .contact-detail-data {
+    top: 256px;
+    left: 603px;
+}
+
+.name h3 {
+  font-size: 36px;
+}
+
+.contact-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.contact-icon h3 {
+  font-size: 40px;
+}
+
+.contact-name {
+  gap: 34px;
+}
+
+.floating-contact-container {
+  gap: 6px;
+}
+
+.edit-delet-contact {
+  gap: 20px;
+  width: 310px;
+}
+}
+
+@media (max-width: 1023px) {
+  .floating-contact-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 12px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+  }
+
+  .contact-detail-data {
+    top: 80px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    background-color: var(--customized_white);
+    overflow-y: auto;
+  }
+
+  .floating-contact-title {
+    top: 206px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 73px;
+  }
+
+  .title-border {
+    width: 30vw;
+    height: 59px;
+}
+
+  .floating-contact-title h3 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .floating-contact-title span {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .name h3 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .contact-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 320px;
+    height: 80px;
+    margin-top: 20px;
+  }
+
+  .edit-delet-contact {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 60%;
+    height: auto;
+  }
+
+  .edit-delete-menu {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--customized_darkblue);
+    background-image: url(../assets/img/mobile/more_vert.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .edit-delete-menu:hover {
+    background-color: rgb(41, 171, 226);
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  .edit-delete-buttons {
+    position: absolute;
+    bottom: 170px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 100px;
+    border-radius: 20px 20px 0 20px;
+    background-color: white;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+    transition: 100ms;
+    transform: translateX(100vw);
+  }
+
+  .remove-edit-delete-buttons {
+    transform: translateX(0);
+}
+
+  .edit-delete-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(96px - 16px);
+    height: calc(40px - 16px);
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .contact-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name {
+    width: 226px;
+    height: 56px;
+    white-space: wrap;
+  }
+
+  .leave-detail-contact {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+  }
+
+  .leave-detail-contact:hover {
+    cursor: pointer;
+  }
+
+  .contact-icon h3 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+}
+}
+
+@media (max-width: 400px) {
+  .name {
+    width: 190px;
+    height: 150px;
+    white-space: wrap;
+    overflow: hidden;
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.contact-icon h3 {
+  font-size: 28px;
+}
+
+.name h3 {
+  font-size: 28px;
+}
+
+.contact-information-title span {
+  font-size: 18px;
+}
+
+.contact-data h4 {
+  font-size: 18px;
+}
+
+.image-container span {
+  font-size: 16px;
+}
+
+.contact {
+  padding: 4px 24px;
+}
+
+}

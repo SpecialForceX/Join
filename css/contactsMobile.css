@@ -1,0 +1,165 @@
+@media (max-width:1700px) {
+    .contact-card {
+        left: 100px;
+    }
+}
+
+@media (max-width: 1402px) {
+    .main-container {
+        margin-left: 200px;
+    }
+
+    .contacts-title {
+        top: 106px;
+        left: 573px;
+        height: 146px;
+        width: 450px;
+    }
+
+    .contacts-container {
+        width: 356px;
+        align-items: center;
+    }
+
+    .add-contact-container {
+        width: calc(362px - 12px);
+    }
+
+    .add-new-contact {
+        width: 292px;
+    }
+
+    .all-contacts {
+        left: 0;
+        width: calc(350px - 24px);
+        height: auto;
+        padding: 92px 12px 78px 12px;
+    }
+
+    .contact {
+        gap: 22px;
+        width: calc(100% - 24px);
+        padding: 15px 12px;
+    }
+
+    .sort-contacts {
+        width: calc(100% - 72px);
+        height: calc(58px - 17px);
+        padding: 17px 36px;
+    }
+
+    .border-container {
+        width: 100%;
+    }
+    .border-grey {
+        width: 100%;
+    }
+
+    .contacts-title h3 {
+        font-size: 51px;
+    }
+
+    .contacts-title span {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1023px) {
+body {
+    position: fixed;
+    overflow: hidden;
+}
+    .main-container {
+    margin-left: 0;
+    margin-top: 82px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .contact-card {
+    left: 0;
+}
+
+  .contacts-container {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.contacts-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sort-contacts {
+    width: calc(100% - 72px);
+    padding: 10px 36px;
+}
+
+.all-contacts {
+    width: calc(100% - 48px);
+    padding: 24px 24px 170px 24px;
+    left: 0;
+}
+
+.border-container {
+    width: 100%;
+}
+
+.border-grey {
+    width: 100%;
+}
+
+.contact {
+    width: calc(100% - 48px);
+    padding: 10px 24px;
+    gap: 20px;
+}
+
+.add-contact-container {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: calc(56px - 12px);
+    height: 56px;
+    background: none;
+}
+
+.add-new-contact {
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+
+}
+
+.add-new-contact h4 {
+   display: none;
+}
+
+.add-new-contact img {
+    margin-left: 0px;
+}
+
+.contacts-title {
+    display: none;
+    position: absolute;
+    top: 206px;
+    left: 743px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 569px;
+    height: 73px;
+}
+}
+
+
+@media (max-width: 400px) { 
+    .contact-data {
+        width: 150px;
+    }
+
+    .border-container {
+        padding: 0;
+    }
+}

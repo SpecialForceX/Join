@@ -1,0 +1,94 @@
+:root {
+    --logo_width: 274px;
+    --logo_height: 334px;
+    --logo_width_small: 100px;
+    --logo_height_small: 122px;
+    --time: 750ms;
+}
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--customized_white);
+}
+
+
+.content {
+    position: absolute;
+    top: calc(50% - calc(var(--logo_height) / 2));
+    left: calc(50% - calc(var(--logo_width) /2));
+    transition: all var(--time) ease-in-out;
+}
+
+
+.content img {
+    width: var(--logo_width);
+    height: var(--logo_width);
+    transition: all var(--time) ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.shrink_n_slide {
+    top: 80px;
+    left: 77px;
+}
+
+
+.shrink_n_slide img {
+    width: var(--logo_width_small);
+    height: var(--logo_height_small);
+}
+
+.logoDark{
+    opacity: 0;
+}
+
+.logoLight{
+    opacity: 1;
+}
+
+@media (max-width:1055px){
+
+    :root{
+        --logo_width: 100px;
+        --logo_height: 122px;
+        --logo_width_small: 64px;
+        --logo_height_small: 78px;
+    }
+
+    body{
+        background-color: var(--customized_darkblue);
+        transition: all var(--time) ease-in-out;
+    }
+
+    .background{
+        background-color: var(--customized_white);
+    }
+
+    .shrink_n_slide {        
+        top: 37px;
+        left: 38px;
+    }
+
+    .logoDark{
+        opacity: 1;
+    }
+    
+    .logoLight{
+        opacity: 0;
+    }
+
+
+    .show{
+        opacity: 0;
+    }
+
+    .hide{
+        opacity: 1;
+    }
+}

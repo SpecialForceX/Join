@@ -1,0 +1,36 @@
+@media (max-width: 1400px) {
+    @media (min-width: 1024px) {
+        .main-container {
+            width: 86%;
+            margin-left: 200px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .main-container {
+        margin-left: 0;
+        margin-top: 80px;
+        margin-bottom: 95px;
+        width: 100%;
+    }
+
+    .title {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 48px;
+    }
+
+    .content-container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 47px;
+    }
+
+    .navbar-container {
+        display: none;
+    }
+}

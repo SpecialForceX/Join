@@ -1,0 +1,49 @@
+    <div class="create-contact-container">
+      <div class="navbar-title">
+        <div class="logo"><img src="/assets/img/join_logo.svg" /></div>
+        <div class="create-contact-title">
+          <h3>Add contact</h3>
+          <span>Tasks are better with a team!</span>
+          <div class="border"></div>
+        </div>
+      </div>
+      <div class="contact-img">
+        <img src="../assets/img/person (2).svg" alt="profile-image" />
+      </div>
+      <form onsubmit="AddContact(); return false">
+        <div class="create-contact-data">
+          <div class="input-container">
+            <input id="contact-name" required type="text" minlength="3" maxlength="18" placeholder="Name" />
+            <img src="../assets/img/person (1).svg" />
+          </div>
+          <div class="error-text-container" id="name-error">
+            <span class="error-text">Please enter a name</span>
+          </div>
+          <div class="input-container">
+            <input id="contact-email" required type="email" minlength="5" maxlength="25" placeholder="Email" />
+            <img src="../assets/img/mail.svg" />
+          </div>
+          <div class="error-text-container" id="email-error">
+            <span class="error-text">Please enter a email</span>
+          </div>
+          <div class="input-container">
+            <input id="contact-tel" required class="number" type="tel" minlength="3" maxlength="12" pattern="\d{3,12}" placeholder="Phone" />
+            <img src="../assets/img/call.svg" />
+          </div>
+          <div class="error-text-container" id="tel-error">
+            <span class="error-text">Please enter a phone number</span>
+          </div>
+        </div>
+        <div class="button-container">
+            <button onclick="showAddContact()" class="cancel-button">Cancel
+              <div class="cancel-svg-container">
+              <svg width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg" class="cancel-svg">
+                <path d="M6.24953 7.00008L11.4925 12.2431M1.00653 12.2431L6.24953 7.00008L1.00653 12.2431ZM11.4925 1.75708L6.24853 7.00008L11.4925 1.75708ZM6.24853 7.00008L1.00653 1.75708L6.24853 7.00008Z" stroke="#2A3647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" strocke=""/>
+                </svg>            
+              </div>
+          </button>
+            <button onclick="testAddContactsInput()" class="create-button" id="add-contact-button">Create contact<img src="/assets/img/check.svg"></button>
+          </div>
+      </form>
+      <button onclick="showAddContact()" class="close-contact"><img class="close-contact-svg" src="/assets/img/close.svg"></button>
+    </div>

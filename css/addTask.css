@@ -1,0 +1,85 @@
+.copied-content .task-template {
+    background-color: rgb(245, 245, 245);
+    border-radius: 0px;
+    margin: 50px 0 0 50px;
+}
+
+.copied-content .close-task {
+    display: none;
+}
+
+.clear-button {
+    width: 126px;
+    height: 22px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.clear-button:hover {
+    cursor: pointer;
+    border-color: rgb(41, 171, 226);
+    color: rgb(41, 171, 226);
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.clear-button:hover .cancel-svg path{
+    stroke: #29abe2; 
+  }
+
+.add-Task-container {     
+    width: 1116px;
+    height: 870px;
+    border-radius: 30px;
+    /* background-color: #ffffff; */
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.add-task-confirmation-background {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}
+
+.add-task-confirmation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+    height: 74px;
+    border-radius: 20px;
+    background-color: var(--customized_darkblue);
+}
+
+.add-task-confirmation-img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30.5px;
+}
+
+.add-task-confirmation-container p {
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 30.5px;
+}

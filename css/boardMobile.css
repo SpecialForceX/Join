@@ -1,0 +1,508 @@
+@media (max-width: 1400px) {
+    @media (min-width: 1024px) {
+        .main-container {
+            width: 86%;
+            margin-left: 200px;
+        }
+
+        .board-header-container {
+            width: 86%;
+        }
+
+        .small-card-container {
+            width: 84%;
+        }
+
+        .todo-title-container {
+            margin-right: 42px;
+        }
+
+        .section-title-container {
+            justify-content: start;
+        }
+
+        .empty-column-container {
+            width: 100%;
+        }
+
+        .progress-container {
+            flex-direction: column;
+            height: auto;
+            align-items: start;
+        }
+
+        .progress-container p {
+            margin-left: -10px;
+            margin-top: 2px;
+        }
+
+        .column-container {
+            justify-content: start;
+        }
+
+        .todo-column {
+            width: 20%;
+            flex: none;
+            margin-right: 42px;
+            margin-left: 64px;
+        }
+
+        .progress-column {
+            width: 20%;
+            flex: none;
+            margin-right: 42px;
+        }
+
+        .await-column {
+            width: 20%;
+            flex: none;
+            margin-right: 30px;
+        }
+
+        .done-column {
+            width: 20%;
+            flex: none;
+            margin-right: 42px;
+        }
+
+        .contacts-order {
+            width: 100%;
+        }
+
+        .menubar-img-container {
+            margin-left: 44px;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    @media (min-width: 1024px) {
+        .todo-column {
+            width: 190px;
+            flex: none;
+            margin-right: 32px;
+            margin-left: 32px;
+        }
+
+        .progress-column {
+            width: 190px;
+            flex: none;
+            margin-right: 34px;
+        }
+
+        .await-column {
+            width: 190px;
+            flex: none;
+            margin-right: 30px;
+        }
+
+        .done-column {
+            width: 190px;
+            flex: none;
+            margin-right: 42px;
+        }
+
+        .todo-title-container {
+            margin-left: 32px;
+            margin-right: 0;
+            width: 190px;
+        }
+
+        .title {
+            margin-left: 32px;
+        }
+
+        .empty-column-container span {
+            font-size: 14px;
+        }
+
+        .task-template {
+            width: 1000px;
+        }
+
+        .task-buttons {
+            left: 630.25px;
+        }
+
+        .close-task {
+            left: 930px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    @media (min-width: 1024px) {
+        .todo-column {
+            width: 170px;
+            flex: none;
+            margin-right: 32px;
+            margin-left: 32px;
+        }
+
+        .progress-column {
+            width: 170px;
+            flex: none;
+            margin-right: 34px;
+        }
+
+        .await-column {
+            width: 170px;
+            flex: none;
+            margin-right: 30px;
+        }
+
+        .done-column {
+            width: 170px;
+            flex: none;
+            margin-right: 42px;
+        }
+
+        .todo-title-container {
+            margin-left: 32px;
+            margin-right: 0;
+            width: 170px;
+        }
+
+        .category-container p {
+            font-size: 15px;
+        }
+
+        .section-title-container p {
+            font-size: 18px;
+        }
+
+    }
+}
+
+@media (max-width: 1023px) {
+    .display-mobile {
+        display: none;
+    }
+
+    .board-header {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .main-container {
+        margin-left: 0;
+        margin-top: 80px;
+        margin-bottom: 95px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .board-addTask-button-mobile {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        background-image: url(/assets/img/mobile/board_addtask_button.svg);
+        cursor: pointer;
+    }
+
+    .title {
+        display: flex;
+        width: 98%;
+        justify-content: space-between;
+        margin-left: 16px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .title h1 {
+        font-size: 47px;
+    }
+
+    .board-header-right {
+        justify-content: center;
+        margin-left: 16px;
+        margin-right: 16px;
+        align-items: center;
+    }
+
+    .board-header-container {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-top: 48px;
+        margin-bottom: 0;
+    }
+
+    .todo-column {
+        flex-direction: row;
+        margin-left: 16px;
+        overflow-x: auto;
+        align-items: normal;
+        min-height: 86px;
+        border-radius: 8px;
+    }
+
+    .progress-column {
+        flex-direction: row;
+        margin-left: 16px;
+        overflow-x: auto;
+        align-items: normal;
+        min-height: 86px;
+        border-radius: 8px;
+    }
+
+    .await-column {
+        flex-direction: row;
+        margin-left: 16px;
+        overflow-x: auto;
+        align-items: normal;
+        min-height: 86px;
+        border-radius: 8px;
+    }
+
+    .done-column {
+        flex-direction: row;
+        margin-left: 16px;
+        overflow-x: auto;
+        align-items: normal;
+        min-height: 86px;
+        border-radius: 8px;
+    }
+
+    .todo-column::-webkit-scrollbar {
+        display: none;
+    }
+
+    .progress-column::-webkit-scrollbar {
+        display: none;
+    }
+
+    .await-column::-webkit-scrollbar {
+        display: none;
+    }
+
+    .done-column::-webkit-scrollbar {
+        display: none;
+    }
+
+    .column-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .disable-mobile {
+        display: none;
+    }
+
+    .show-in-mobile {
+        display: flex;
+    }
+
+    .todo-title-container {
+        margin-left: 16px;
+        margin-top: 24px;
+        width: auto;
+    }
+
+    .todo-title-container p {
+        font-family: inter;
+        font-weight: 700;
+        font-size: 27px;
+        color: var(--customized_darkblue);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .todo-section-add-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+        background-image: url(/assets/img/mobile/board_column_addtask_button.svg);
+    }
+
+    .todo-section-add-icon:hover {
+        background-image: url(/assets/img/mobile/board_column_addtask_button.svg);
+    }
+
+    .small-card-container {
+        margin-bottom: 8px;
+        margin-right: 32px;
+    }
+
+    .input-container {
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 100%;
+    }
+
+    .input-box {
+        width: 100%;
+        padding-right: 16px;
+    }
+
+    .input-box input {
+        width: 100%;
+    }
+
+    .popup {
+        top: 38px;
+    }
+
+    .big-card-container {
+        width: 320px;
+        padding: 32px 24px 32px 24px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .big-card-edit {
+        width: 320px;
+        padding: 32px 24px 32px 24px;
+        height: calc(100vh - 100px);
+    }
+
+    .input-title-field {
+        width: 260px;
+        font-size: 16px;
+    }
+
+    .add-task-input-container {
+        width: 290px;
+    }
+
+    .assigned-contact-container {
+        width: 272px;
+    }
+
+    .subtask-popup-ul-container {
+        width: 264px;
+    }
+
+    .button-prio {
+        width: 95px;
+        font-size: 14px;
+        padding: 7px 4px 7px 4px;
+    }
+
+    .button-prio img {
+        width: 19px;
+    }
+
+    .subtask-popup-ul-container .subtasks-edit-delete-container {
+        display: flex;
+    }
+
+    .subtask-edit-input {
+        width: 236px;
+    }
+
+    .subtask-popup-edit-container {
+        width: 264px;
+    }
+
+    .subtasks-popup-section {
+        width: 304px;
+    }
+
+    .edit-content::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .big-card-title {
+        font-size: 36px;
+    }
+
+    .big-card-description {
+        font-size: 16px;
+    }
+
+    .big-card-data-txt {
+        font-size: 16px;
+    }
+
+    .big-card-data {
+        font-size: 16px;
+    }
+
+    .assigned-to-txt {
+        font-size: 16px;
+    }
+
+    .input-title-section p {
+        font-size: 16px;
+    }
+
+    .input-txt {
+        font-size: 16px;
+    }
+
+    .task-description-span {
+        font-size: 16px;
+    }
+
+    .task-deadline-span {
+        font-size: 16px;
+    }
+
+    .input-field-assigntTo input {
+        font-size: 16px;
+    }
+
+    .subtask-input {
+        font-size: 16px;
+    }
+
+    .assigned-contact-name {
+        font-size: 16px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .big-card-assigned-container {
+        height: auto;
+        overflow-x: unset;
+        overflow-y: unset;
+        min-height: unset;
+    }
+
+    #selected-contacts {
+        width: 93%;
+    }
+
+    .big-card-assigned-container::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .big-card-container {
+        width: 280px;
+    }
+
+    .big-card-edit {
+        width: 260px;
+    }
+
+    .input-title-field {
+        width: 215px;
+    }
+
+    .add-task-input-container {
+        width: 245px;
+    }
+
+    .assigned-contact-container {
+        width: 227px;
+    }
+
+    .subtask-popup-ul-container {
+        width: 219px;
+    }
+
+    .subtasks-edit-delete-container img {
+        width: 14px;
+    }
+
+    .subtasks-seperator {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}

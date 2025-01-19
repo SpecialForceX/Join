@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: var(--color_2);
+}
+
+h1 {
+    margin: 0;
+    font-family: inter;
+    font-size: 61px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 27px;
+    margin: 0;
+}
+
+h3 {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 96px;
+    margin-right: 98.5px;
+    margin-top: 110px;
+}
+
+.content-container {
+    margin-left: 96px;
+    margin-right: 98.5px;
+    margin-top: 32px;
+}
+
+.content-container p {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.content-container li {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.content-container ul {
+    margin: 0;
+}
+
+.content-container a {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.arrow-left-blue-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.arrow-left-blue-container:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.margin-top35 {
+    margin-top: 35px !important;
+}
+
+.margin-bottom10 {
+    margin-bottom: 10px !important;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.margin-top10 {
+    margin-top: 10px;
+}

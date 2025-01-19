@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/Capa 2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/contacts.css" />
+    <link rel="stylesheet" href="../css/addContact.css" />
+    <link rel="stylesheet" href="../css/addContactsMobile.css">
+    <link rel="stylesheet" href="../css/editContactMobile.css">
+    <link rel="stylesheet" href="../css/floatingContact.css">
+    <link rel="stylesheet" href="../css/floatingContactMobile.css">
+    <link rel="stylesheet" href="../css/navbarMobile.css">
+    <link rel="stylesheet" href="../css/headerMobile.css">
+    <link rel="stylesheet" href="../css/contactsMobile.css">
+    <script src="/js/storage.js"></script>
+    <script src="../js/storageHandling.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/includeHTML.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/contactHTML.js"></script>
+    <script src="../js/helpFunctions.js"></script>
+    <script src="../js/helpFunctionsContact.js"></script>
+    <script src="../js/helpFunctionsBoard.js"></script>
+    <title>JOIN Contacts</title>
+  </head>
+  <body onload="init()">
+    <div onclick="showAddContact()" id="contact-card" class="contact-card remove-contact-container">
+      <div onclick="doNotClose(event)" w3-include-html="../assets/templates/add_contact.html"></div>
+  </div>
+  <div onclick="showEditContact('hide')" id="edit-card" class="contact-card remove-contact-container">
+    <div onclick="doNotClose(event)" w3-include-html="../assets/templates/edit_contact.html"></div>
+</div>
+
+   <div id="created-contact" class="created-contact remove-contact-message">
+    <span>Contact successfully created</span>
+   </div>
+
+    <div class="main-container">
+        <div class="contacts-title">
+            <h3>Contacts</h3>
+            <div class="title-border"></div>
+            <span>Better with a team</span>
+        </div>
+        <div id="contact-detail-data" class="contact-detail-data remove-contact-detail">
+          <div w3-include-html="../assets/templates/floating_contact.html"></div>
+      </div>
+      <div class="contacts-container">
+        <div class="add-contact-container">
+          <button onclick="showAddContact('show')" class="add-new-contact">
+            <h4>Add new contact</h4>
+            <img src="/assets/img/person_add.svg" />
+          </button>
+        </div>
+        <div class="all-contacts" id="all-contacts">
+      </div>
+   </div>
+  </div>
+  <div w3-include-html="../assets/templates/header_template.html"></div>
+  <div w3-include-html="../assets/templates/navbar_template.html"></div>
+  </body>
+</html>

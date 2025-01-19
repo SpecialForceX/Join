@@ -1,0 +1,78 @@
+@media (max-width: 1400px) {
+    @media (min-width: 1024px) {
+        .navbar-container {
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .logo_container {
+        display: none;
+    }
+
+    .navbar-privacy-container {
+        display: none;
+    }
+
+    .navbar-container {
+        bottom: 0;
+        height: 80px;
+        width: 100vw;
+        top: auto;
+        bottom: 0;
+    }
+
+    .menubar {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .menubar a {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menubar-img-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .menubar p {
+        margin-top: 4px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .menubar li {
+        height: 80px;
+        width: 80px;
+        justify-content: center;
+        border-radius: 16px;
+    }
+
+    .menubar-img-container {
+        width: 24px;
+        height: 24px;
+    }
+
+    .summary_icon_mobile {
+        width: 22px;
+        height: 22px;
+    }
+
+    .addTask_icon_mobile {
+        width: 24px;
+        height: 24px;
+    }
+
+    .board_icon_mobile {
+        width: 20.31px;
+        height: 24px;
+    }
+
+    .contacts_icon_mobile {
+        width: 21.6px;
+        height: 24px;
+    }
+}

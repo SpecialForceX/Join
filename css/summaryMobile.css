@@ -1,0 +1,368 @@
+@media (max-width: 1400px) {
+    @media (min-width: 1230px) {
+        .main-container {
+            width: 70%;
+            margin-left: 200px;
+        }
+
+        .headline-container {
+            position: static;
+            margin-top: 104px;
+            margin-left: 32px;
+        }
+
+        .overwiev {
+            left: 232px;
+        }
+
+        .greeting-container {
+            left: 840px;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    @media (min-width: 1024px) {
+        .done-svg {
+            width: 28px;
+            height: 20px;
+        }
+
+        .todo-svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .main-container {
+            width: 70%;
+            margin-left: 200px;
+        }
+
+        .headline-container {
+            position: static;
+            margin-top: 104px;
+            margin-left: 32px;
+        }
+
+        .overwiev {
+            left: 232px;
+        }
+
+        .todo, .done {
+            width: 148px;
+            height: 34px;
+            margin-left: 16px;
+        }
+        
+        .todo-icon-container {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .tasks-todo-done {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            height: auto;
+            justify-content: flex-start;
+        }
+    
+        .prio-date {
+            position: static;
+            width: 291px;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 30px;
+            height: calc(110px - 56px);
+        }
+    
+        .overwiev-tasks {
+            position: static;
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+        }
+    
+        .amount-tasks, .tasks-progress, .tasks-feedback {
+            position: static;
+            height: calc(116px - 50px);
+            width: 119px;
+            justify-content: center;
+            margin-left: 16px;
+        }
+
+        .done {
+            margin-right: 16px;
+        }
+    
+        .amount-tasks {
+            margin-left: 16px;
+        }
+    
+        .tasks-feedback {
+            margin-right: 16px;
+        }
+    
+        h4 {
+            font-size: 47px !important;
+        }
+    
+        .overwiev span {
+            font-size: 14px;
+        }
+    
+        .icon-container {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .prio-icon {
+            width: 22.8px;
+            height: 16.7px;
+        }
+
+        .greeting-container {
+            left: 680px;
+            width: 340px;
+            justify-content: center;
+        }
+
+        .greeting-container h3 {
+            font-size: 48px;
+        }
+
+        .greeting-container h4 {
+            font-size: 32px !important;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .main-container {
+        margin-left: 0;
+        margin-top: 80px;
+        margin-bottom: 95px;
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .headline-container {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        margin-left: 16px;
+        width: auto;
+        height: auto;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 47px;
+    }
+
+    h3 {
+        margin-top: 8px;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .border-mobile {
+        display: flex;
+        width: 90px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: var(--customized_lightblue);
+        margin-top: 16px;
+    }
+
+    .overwiev {
+        left: 0;
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tasks-todo-done {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .prio-date {
+        position: static;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 30px;
+        width: calc(616px - 96px);
+    }
+
+    .overwiev-tasks {
+        position: static;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .amount-tasks, .tasks-progress, .tasks-feedback {
+        position: static;
+        justify-content: center;
+        margin-left: 16px;
+        width: 195px;
+    }
+
+    .todo, .done {
+        margin-left: 16px;
+        width: calc(300px - 38px);
+    }
+
+    .greeting-container {
+        display: none;
+        opacity: 0;
+        transition: opacity 2s; /* Transition for opacity */
+    }
+    
+    .greeting-container.show {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        background-color: white;
+        left: 0;
+        top: 0;
+        opacity: 1; /* Fully visible */
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .done-svg {
+        width: 28px;
+        height: 20px;
+    }
+
+    .todo-svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .headline-container {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .todo, .done {
+        width: 148px;
+        height: 34px;
+        margin-left: 16px;
+    }
+    
+    .todo-icon-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tasks-todo-done {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .prio-date {
+        position: static;
+        width: 291px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: calc(110px - 56px);
+    }
+
+    .overwiev-tasks {
+        position: static;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .amount-tasks, .tasks-progress, .tasks-feedback {
+        position: static;
+        height: calc(116px - 50px);
+        width: 119px;
+        justify-content: center;
+        margin-left: 16px;
+    }
+
+    .done {
+        margin-right: 16px;
+    }
+
+    .amount-tasks {
+        margin-left: 16px;
+    }
+
+    .tasks-feedback {
+        margin-right: 16px;
+    }
+
+    h4 {
+        font-size: 47px !important;
+    }
+
+    .overwiev span {
+        font-size: 14px;
+    }
+
+    .icon-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .prio-icon {
+        width: 22.8px;
+        height: 16.7px;
+    }
+}
+
+@media (max-width: 419px) {
+    .todo, .done {
+        width: 99px;
+    }
+
+    .todo-amount span, .done-amount span {
+        width: 44px;
+    }
+
+    .prio-date {
+        width: 232px;
+        gap: 21px;
+        padding: 28px;
+    }
+
+    .amount-tasks, .tasks-progress, .tasks-feedback {
+        width: 86px;
+    }
+
+    .greeting-container h3 {
+        font-size: 32px;
+    }
+
+    .greeting-container h4 {
+        font-size: 24px !important;
+    }
+}
